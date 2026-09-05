@@ -4,43 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Agencia Tiago</title>
+    <!-- Google Fonts (Poppins) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Vinculación a styles.css -->
+<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
-    <header>
-        <p><strong>Agencia Tiago</strong></p>
+    <header class="header-principal">
+        <p><strong>TP Studio | Agencia de Desarrollo Web & Estrategia Digital</strong></p>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="nav-enlace" href="../index.html">Inicio</a></li>
+                <li><a class="nav-enlace" href="sobre-mi.html">Nosotros</a></li>
+                <li><a class="nav-enlace" href="servicios.html">Servicios</a></li>
+                <li><a class="nav-enlace" href="faq.html">FAQ</a></li>
+                <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Contáctanos</h1>
-            <h2>Empecemos a trabajar en tu próximo proyecto</h2>
-            <p>Escríbenos para recibir un asesoramiento personalizado y una propuesta adaptada a tus necesidades.</p>
+       <section class="tarjeta-destacada">
+    <h2>Solicita tu propuesta personalizada</h2>
+    <p>Completa el formulario y nos pondremos en contacto en menos de 24 horas.</p>
 
-            <article>
-                <h3>Medios de contacto</h3>
-                <p>Puedes comunicarte con nosotros por correo electrónico o a través de nuestras redes oficiales.</p>
-            </article>
+    <form action="#" method="POST">
+    <div class="campo-form">
+        <label for="nombre" class="label-form">Nombre o Empresa:</label>
+        <input type="text" id="nombre" name="nombre" class="input-form" placeholder="Ej: Juan Pérez" required>
+    </div>
 
-            <figure>
-                <img src="../img/YO FOTO DE PERFIL.jpg" alt="Formas de contacto con la agencia">
-                <figcaption>Estamos listos para responder a tus inquietudes</figcaption>
-            </figure>
-        </section>
+    <div class="campo-form">
+        <label for="email" class="label-form">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="input-form" placeholder="correo@tuempresa.com" required>
+    </div>
+
+    <div class="campo-form">
+        <label for="servicio" class="label-form">Servicio de interés:</label>
+        <select id="servicio" name="servicio" class="input-form">
+            <option value="web">Desarrollo Web & Landing Page</option>
+            <option value="ads">Gestión de Publicidad Digital</option>
+            <option value="mantenimiento">Optimización y Mantenimiento Web</option>
+        </select>
+    </div>
+
+    <div class="campo-form">
+        <label for="mensaje" class="label-form">Detalles del proyecto:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="input-form" placeholder="Cuéntanos sobre tu negocio..." required></textarea>
+    </div>
+
+    <button type="submit" class="boton-principal boton-form">Enviar Consulta</button>
+</form>
+</section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Agencia de Tiago. Todos los derechos reservados.</p>
-        <p>Síguenos en nuestras redes sociales</p>
+    <footer class="footer-principal">
+        <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul>
+            <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
     </footer>
 
 </body>

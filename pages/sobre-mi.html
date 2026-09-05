@@ -4,49 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí | Agencia Tiago</title>
+    <!-- Google Fonts (Poppins) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Vinculación a styles.css -->
+<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado y Navegación -->
-    <header>
-        <p><strong>Agencia Tiago</strong></p>
+    <header class="header-principal">
+        <p><strong>TP Studio | Agencia de Desarrollo Web & Estrategia Digital</strong></p>
         <nav>
             <ul>
-                <!-- Desde pages/ para volver al inicio se usa ../ -->
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="nav-enlace" href="../index.html">Inicio</a></li>
+                <li><a class="nav-enlace" href="sobre-mi.html">Nosotros</a></li>
+                <li><a class="nav-enlace" href="servicios.html">Servicios</a></li>
+                <li><a class="nav-enlace" href="faq.html">FAQ</a></li>
+                <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
     <main>
-        <section>
-            <h1>Sobre Mí y la Agencia</h1>
-            <h2>Especialista en Marketing Digital & Desarrollo Web</h2>
-            <p>Hola, soy Tiago. Me especializo en conectar marcas con sus audiencias a través de estrategias digitales efectivas y desarrollo web moderno.</p>
-            
-            <article>
-                <h3>Nuestra Misión</h3>
-                <p>Impulsar el crecimiento de negocios y profesionales mediante soluciones integrales que optimicen su presencia online.</p>
-            </article>
+        <section class="tarjeta-destacada">
+            <h1>Sobre TP Studio</h1>
+            <h2>Especialistas en Desarrollo Web & Crecimiento Digital</h2>
+            <p>En <strong>TP Studio</strong> nos enfocamos en conectar marcas con sus clientes ideales a través de soluciones web modernas, veloces y enfocadas en la conversión.</p>
+        </section>
 
-            <!-- Imagen semántica con figure -->
+        <section>
+            <h2>Nuestra Misión</h2>
+            <p>Impulsar el crecimiento de empresas y profesionales mediante la creación de plataformas digitales que transmitan la máxima solvencia, confianza y profesionalismo.</p>
+            
             <figure>
-                <!-- Recuerda verificar la ruta de tu imagen dentro de img/ -->
-                <img src="../img/YO FOTO DE PERFIL.jpg" alt="Foto de perfil de Tiago, fundador de la agencia">
-                <figcaption>Tiago - Fundador y Especialista en Marketing Digital</figcaption>
-            </figure>
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Equipo de trabajo en TP Studio">
+    <figcaption>TP Studio - Innovación, compromiso y estrategia digital.</figcaption>
+</figure>
         </section>
     </main>
 
     <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 Agencia Tiago. Todos los derechos reservados.</p>
-        <p>Síguenos en nuestras redes sociales</p>
+    <footer class="footer-principal">
+        <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul>
+            <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
     </footer>
 
 </body>

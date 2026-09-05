@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiago | Agencia de Publicidad Digital & Desarrollo Web</title>
+    <title>TP Studio | Agencia de Desarrollo Web</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado con marca y navegación principal -->
-    <header>
-        <p><strong>Tiago | Agencia de Publicidad Digital</strong></p>
+    <!-- Encabezado y Navegación -->
+    <header class="header-principal">
+        <p><strong>TP Studio | Agencia de Desarrollo Web & Estrategia Digital</strong></p>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="pages/servicios.html">Servicios</a></li>
-                <li><a href="pages/faq.html">FAQ</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a class="nav-enlace" href="index.html">Inicio</a></li>
+                <li><a class="nav-enlace" href="pages/sobre-mi.html">Nosotros</a></li>
+                <li><a class="nav-enlace" href="pages/servicios.html">Servicios</a></li>
+                <li><a class="nav-enlace" href="pages/faq.html">FAQ</a></li>
+                <li><a class="nav-enlace" href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenido principal -->
+    <!-- Contenido Principal -->
     <main>
-        <!-- Sección de presentación -->
+        <!-- Sección Hero / Presentación -->
+       <section class="tarjeta-destacada">
+    <h1>Transformamos visitas en clientes con sitios web de alto impacto</h1>
+    <p>En <strong>TP Studio</strong> diseñamos e implementamos experiencias digitales modernas, rápidas y optimizadas para hacer crecer tu negocio y escalar tus ventas.</p>
+    
+    <!-- Botón CTA añadido -->
+    <a href="pages/contacto.html" class="boton-principal">Solicitar Cotización</a>
+</section>
+        <!-- Enfoque de la agencia -->
         <section>
-            <h1>Estrategias de Publicidad Digital & Desarrollo Web para Marcas</h1>
-            <p>Soy Tiago, Técnico en Marketing y Publicidad Digital graduado de la Universidad Siglo 21 y desarrollador web en formación. Ayudo a marcas a potenciar su presencia online y maximizar sus conversiones.</p>
-        </section>
-
-        <!-- Sección de información general breve con la imagen requerida -->
-        <section>
-            <h2>Enfoque Integrado de Marketing y Tecnología</h2>
-            <p>Combinamos la creación de campañas publicitarias efectivas con sitios web optimizados técnicamente para transformar visitas en clientes.</p>
+            <h2>Ingeniería Web & Estrategia de Conversión</h2>
+            <p>Combinamos desarrollo web de última generación con principios de diseño orientados a resultados para garantizar la máxima rentabilidad de tu presencia digital.</p>
             
             <figure>
-                <img src="img/marketing-digital.jpg" alt="Planificación de estrategia de publicidad digital y analítica web en una pantalla">
-                <figcaption>Estrategia de crecimiento digital orientada al retorno de inversión.</figcaption>
-            </figure>
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Dashboard de analítica y desarrollo web en TP Studio">
+    <figcaption>Transformación digital e ingeniería web orientada a resultados.</figcaption>
+</figure>
         </section>
 
-        <!-- Sección de servicios en lista con artículos -->
-        <section>
+        <!-- Resumen de Servicios -->
+        <section class="tarjeta-destacada">
             <h2>Servicios Destacados</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Gestión de Publicidad Digital (Ads)</h3>
-                        <p>Diseño e implementación de campañas en Meta Ads y Google Ads enfocado en resultados.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Desarrollo Web & Landing Pages</h3>
-                        <p>Construcción de sitios web optimizados, rápidos y orientados a la conversión de leads.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Estrategia de Marketing Integral</h3>
-                        <p>Auditoría de marca y definición de embudos de venta (*funnels*) para escalar tu negocio.</p>
-                    </article>
-                </li>
-            </ul>
+            
+            <article>
+                <h3>Desarrollo Web & Landing Pages</h3>
+                <p>Construcción de sitios web ultrarrápidos, 100% adaptables a celulares y optimizados para captar leads y clientes potenciales.</p>
+            </article>
+
+            <article>
+                <h3>Gestión de Publicidad Digital (Ads)</h3>
+                <p>Estrategias y campañas de alto rendimiento en Meta Ads y Google Ads para impulsar el tráfico calificado hacia tu web.</p>
+            </article>
+
+            <article>
+                <h3>Optimización & Mantenimiento</h3>
+                <p>Auditoría de rendimiento, velocidad de carga y actualización continua para mantener tu plataforma siempre operativa.</p>
+            </article>
         </section>
     </main>
 
-    <!-- Pie de página con copyright y redes -->
-    <footer>
-        <p>&copy; 2026 Tiago Agencia Digital. Todos los derechos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-        </nav>
+    <!-- Pie de página -->
+    <footer class="footer-principal">
+        <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul>
+            <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
     </footer>
 
 </body>
