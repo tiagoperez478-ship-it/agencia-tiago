@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | TP Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado con Navbar Flexbox -->
+    <header class="header-principal">
+        <div class="logo-marca">
+            <strong>TP Studio</strong>
+        </div>
+        <nav class="nav-principal">
+            <ul class="lista-nav">
+                <li><a class="nav-enlace" href="../index.html">Inicio</a></li>
+                <li><a class="nav-enlace" href="sobre-mi.html">Nosotros</a></li>
+                <li><a class="nav-enlace" href="servicios.html">Servicios</a></li>
+                <li><a class="nav-enlace" href="proyectos.html">Proyectos</a></li>
+                <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Encabezado -->
+        <section class="tarjeta-destacada">
+            <h1>Hablemos de tu próximo proyecto</h1>
+            <p>Comunicate con nosotros para recibir asesoramiento personalizado y armar una propuesta a la medida de tu negocio.</p>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="tarjeta-destacada">
+            <h2>Envianos tu consulta</h2>
+            <form class="formulario-contacto" action="#" method="POST">
+                <div class="campo-form">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juan@ejemplo.com" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="mensaje">Mensaje o consulta</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton-principal">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- Canales de Comunicación -->
+        <section class="seccion-destacada">
+            <h2>Canales Directos</h2>
+            <div class="contenedor-grilla">
+                <article class="tarjeta-servicio">
+                    <h3>Correo Electrónico</h3>
+                    <p>Escribinos directamente a nuestro email de contacto y te responderemos en menos de 24 horas hábiles.</p>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Redes Sociales</h3>
+                    <p>Encontranos en Instagram y LinkedIn para ver nuestras novedades y ponernos en contacto de forma directa.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-principal">
+        <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="lista-footer">
+            <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
