@@ -15,15 +15,17 @@
 </head>
 <body>
 
-    <!-- Encabezado y Navegación -->
+    <!-- Encabezado y Navegación con Flexbox -->
     <header class="header-principal">
-        <p><strong>TP Studio | Agencia de Desarrollo Web & Estrategia Digital</strong></p>
-        <nav>
-            <ul>
+        <div class="logo-marca">
+            <strong>TP Studio</strong>
+        </div>
+        <nav class="nav-principal">
+            <ul class="lista-nav">
                 <li><a class="nav-enlace" href="index.html">Inicio</a></li>
                 <li><a class="nav-enlace" href="pages/sobre-mi.html">Nosotros</a></li>
                 <li><a class="nav-enlace" href="pages/servicios.html">Servicios</a></li>
-                <li><a class="nav-enlace" href="pages/faq.html">FAQ</a></li>
+                <li><a class="nav-enlace" href="pages/proyectos.html">Proyectos</a></li>
                 <li><a class="nav-enlace" href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -32,42 +34,42 @@
     <!-- Contenido Principal -->
     <main>
         <!-- Sección Hero / Presentación -->
-       <section class="tarjeta-destacada">
-    <h1>Transformamos visitas en clientes con sitios web de alto impacto</h1>
-    <p>En <strong>TP Studio</strong> diseñamos e implementamos experiencias digitales modernas, rápidas y optimizadas para hacer crecer tu negocio y escalar tus ventas.</p>
-    
-    <!-- Botón CTA añadido -->
-    <a href="pages/contacto.html" class="boton-principal">Solicitar Cotización</a>
-</section>
+        <section class="tarjeta-destacada">
+            <h1>Transformamos visitas en clientes con sitios web de alto impacto</h1>
+            <p>En <strong>TP Studio</strong> diseñamos e implementamos experiencias digitales modernas, rápidas y optimizadas para hacer crecer tu negocio y escalar tus ventas.</p>
+            <a href="pages/contacto.html" class="boton-principal">Solicitar Cotización</a>
+        </section>
+
         <!-- Enfoque de la agencia -->
-        <section>
+        <section class="seccion-destacada">
             <h2>Ingeniería Web & Estrategia de Conversión</h2>
             <p>Combinamos desarrollo web de última generación con principios de diseño orientados a resultados para garantizar la máxima rentabilidad de tu presencia digital.</p>
             
             <figure>
-    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Dashboard de analítica y desarrollo web en TP Studio">
-    <figcaption>Transformación digital e ingeniería web orientada a resultados.</figcaption>
-</figure>
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Dashboard de analítica y desarrollo web en TP Studio">
+                <figcaption>Transformación digital e ingeniería web orientada a resultados.</figcaption>
+            </figure>
         </section>
 
-        <!-- Resumen de Servicios -->
+        <!-- Resumen de Servicios con Flexbox -->
         <section class="tarjeta-destacada">
             <h2>Servicios Destacados</h2>
-            
-            <article>
-                <h3>Desarrollo Web & Landing Pages</h3>
-                <p>Construcción de sitios web ultrarrápidos, 100% adaptables a celulares y optimizados para captar leads y clientes potenciales.</p>
-            </article>
+            <div class="contenedor-grilla">
+                <article class="tarjeta-servicio">
+                    <h3>Desarrollo Web & Landing Pages</h3>
+                    <p>Construcción de sitios web ultrarrápidos, 100% adaptables a celulares y optimizados para captar leads y clientes potenciales.</p>
+                </article>
 
-            <article>
-                <h3>Gestión de Publicidad Digital (Ads)</h3>
-                <p>Estrategias y campañas de alto rendimiento en Meta Ads y Google Ads para impulsar el tráfico calificado hacia tu web.</p>
-            </article>
+                <article class="tarjeta-servicio">
+                    <h3>Gestión de Publicidad Digital (Ads)</h3>
+                    <p>Estrategias y campañas de alto rendimiento en Meta Ads y Google Ads para impulsar el tráfico calificado hacia tu web.</p>
+                </article>
 
-            <article>
-                <h3>Optimización & Mantenimiento</h3>
-                <p>Auditoría de rendimiento, velocidad de carga y actualización continua para mantener tu plataforma siempre operativa.</p>
-            </article>
+                <article class="tarjeta-servicio">
+                    <h3>Optimización & Mantenimiento</h3>
+                    <p>Auditoría de rendimiento, velocidad de carga y actualización continua para mantener tu plataforma siempre operativa.</p>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -75,7 +77,7 @@
     <footer class="footer-principal">
         <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
         <p>Síguenos en nuestras redes sociales:</p>
-        <ul>
+        <ul class="lista-footer">
             <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
