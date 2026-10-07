@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <!-- 1. NAVBAR DE BOOTSTRAP (Requisito Obligatorio Pre-entregas 5 y 6) -->
+    <!-- 1. NAVBAR DE BOOTSTRAP -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark header-bootstrap">
             <div class="container-fluid px-4">
@@ -40,56 +40,62 @@
     </header>
 
     <!-- Contenido Principal -->
-    <main class="main-layout">
+    <main class="main-layout container py-4">
 
-        <!-- 2. COMPONENTE CAROUSEL DE BOOTSTRAP (Pre-entrega 5) -->
-        <section class="tarjeta-destacada p-0 overflow-hidden mb-4">
-      <!-- BANNER SUPERIOR CON IMAGEN DE MARKETING DIGITAL -->
-<div class="container my-5">
-  <div class="card bg-dark text-white border-0 p-4 rounded-4 shadow-lg">
-    <div class="row align-items-center g-4">
-      
-      <!-- Columna de Texto -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3 display-6">Transformamos tu presencia digital con soluciones a medida</h2>
-        <p class="text-secondary lead fs-6 mb-4">
-          En <strong>TP Studio</strong> creamos sitios web y tiendas e-commerce responsivas, optimizadas para SEO y maquetadas con las últimas tecnologías del mercado.
-        </p>
-        <a href="pages/contacto.html" class="btn btn-primary px-4 py-2 fw-semibold rounded-3">Iniciar Proyecto</a>
-      </div>
-
-      <!-- Columna de Imagen (perfectamente encuadrada) -->
-      <div class="col-lg-6">
-        <img src="https://images.unsplash.com/photo-1556742049-0a67d8d47b0a?q=80&w=800&auto=format&fit=crop" 
-             alt="E-commerce y compras digitales" 
-             class="img-fluid w-100 rounded-3 border border-secondary shadow"
-             style="max-height: 380px; object-fit: cover;">
-        <p class="text-center text-secondary small mt-2 mb-0">Diseño responsivo centrado en la experiencia de usuario y comercio electrónico.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-        </section>
-
-        <!-- 3. HERO CON CSS GRID & GRID-TEMPLATE-AREAS (Pre-entrega 4) -->
-        <section class="tarjeta-destacada hero-grid">
-            <div class="hero-texto">
-                <h1>Transformamos tu presencia digital con soluciones a medida</h1>
-                <p>En <strong>TP Studio</strong> creamos sitios web responsivos y optimizados en SEO, maquetados con las últimas tecnologías del mercado.</p>
-                <a href="pages/contacto.html" class="boton-principal">Iniciar Proyecto</a>
-            </div>
-            <div class="hero-imagen">
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800&auto=format&fit=crop" alt="Diseño de interfaz y maquetación">
-                    <figcaption>Diseño responsivo centrado en la experiencia de usuario.</figcaption>
-                </figure>
+        <!-- 2. COMPONENTE CAROUSEL DE BOOTSTRAP -->
+        <section class="mb-5">
+            <div id="carouselHome" class="carousel slide rounded-4 overflow-hidden shadow-lg" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" class="d-block w-100 img-fluid" alt="Estrategia y Marketing Digital" style="max-height: 420px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5>Estrategia & Marketing Digital</h5>
+                            <p>Impulsamos tu marca con análisis de datos e impresiones de alto impacto.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" class="d-block w-100 img-fluid" alt="Comercio Electrónico y Analítica" style="max-height: 420px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5>Plataformas E-commerce</h5>
+                            <p>Desarrollo web optimizado para maximizar tus ventas online.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
         </section>
 
-        <!-- 4. SERVICIOS DESTACADOS CON CSS GRID -->
-        <section class="tarjeta-destacada">
-            <h2>Nuestros Servicios Destacados</h2>
+        <!-- 3. HERO CON GRID -->
+        <section class="tarjeta-destacada hero-grid mb-5 p-4 rounded-4 shadow-lg bg-dark text-white">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 hero-texto">
+                    <h1 class="display-6 fw-bold mb-3">Transformamos tu presencia digital con soluciones a medida</h1>
+                    <p class="lead fs-6 text-secondary mb-4">En <strong>TP Studio</strong> creamos sitios web responsivos, tiendas e-commerce y estrategias optimizadas en SEO para destacar tu negocio.</p>
+                    <a href="pages/contacto.html" class="btn btn-primary px-4 py-2 fw-semibold rounded-3">Iniciar Proyecto</a>
+                </div>
+                <div class="col-lg-6 hero-imagen">
+                    <figure class="m-0">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800&auto=format&fit=crop" class="img-fluid w-100 rounded-3 border border-secondary shadow" alt="Diseño de interfaz y maquetación" style="max-height: 380px; object-fit: cover;">
+                        <figcaption class="text-center text-secondary small mt-2">Diseño responsivo centrado en la experiencia de usuario.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICIOS DESTACADOS -->
+        <section class="tarjeta-destacada p-4 rounded-4 mb-4">
+            <h2 class="mb-4 text-center fw-bold">Nuestros Servicios Destacados</h2>
             <div class="contenedor-grilla">
                 <article class="tarjeta-servicio">
                     <h3>Desarrollo Web & Landing Pages</h3>
@@ -110,16 +116,16 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="footer-principal">
+    <footer class="footer-principal py-4 text-center">
         <p>&copy; 2026 TP Studio. Todos los derechos reservados.</p>
         <p>Síguenos en nuestras redes sociales:</p>
-        <ul class="lista-footer">
+        <ul class="lista-footer d-flex justify-content-center gap-3 list-unstyled">
             <li><a class="footer-enlace" href="https://www.instagram.com/tiagoperez_10/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a class="footer-enlace" href="https://www.linkedin.com/in/tiago-perez-0bee0031b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
     </footer>
 
-    <!-- Bootstrap JS CDN (Pre-entrega 5 y 6) -->
+    <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
