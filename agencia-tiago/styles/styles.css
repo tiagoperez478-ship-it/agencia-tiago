@@ -1,0 +1,307 @@
+/* ============================================
+   1. RESETEO GLOBAL Y VARIABLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-main: #0B0F19;
+    --color-bg-card: #111827;
+    --color-bg-header: #1F2937;
+    --color-primary: #6366F1;
+    --color-primary-hover: #4F46E5;
+    --color-primary-active: #3730A3;
+    --color-text-main: #F9FAFB;
+    --color-text-muted: #9CA3AF;
+    --color-border: #1F2937;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============================================
+   2. PERSONALIZACIÓN BOOTSTRAP NAVBAR (Pre-entrega 5)
+   ============================================ */
+.header-bootstrap {
+    background-color: var(--color-bg-header) !important;
+    border-bottom: 1px solid var(--color-border);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.logo-marca {
+    font-size: 1.35rem;
+    color: var(--color-text-main) !important;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.logo-marca:hover,
+.logo-marca:focus {
+    color: var(--color-primary) !important;
+}
+
+.nav-enlace {
+    color: var(--color-text-muted) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 6px;
+    transition: all 0.3s ease; /* Transición suave requerida */
+}
+
+/* Estados Interactivos: Hover, Focus, Active (Pre-entrega 5) */
+.nav-enlace:hover,
+.nav-enlace:focus {
+    color: var(--color-text-main) !important;
+    background-color: rgba(99, 102, 241, 0.15);
+}
+
+.nav-enlace:active,
+.nav-enlace.active {
+    color: #FFFFFF !important;
+    background-color: var(--color-primary) !important;
+}
+
+/* ============================================
+   3. MOBILE-FIRST & LAYOUT GENERAL
+   ============================================ */
+.main-layout {
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Base Mobile: 1 sola columna */
+.hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contenedor-grilla {
+    display: grid;
+    grid-template-columns: 1fr;   /* 1fr en mobile */
+    gap: 1.25rem;                 /* Espaciado con gap */
+    margin-top: 1rem;
+}
+
+/* ============================================
+   4. TARJETAS, COMPONENTES Y CAROUSEL
+   ============================================ */
+.tarjeta-destacada {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-servicio {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-4px);
+    border-left-color: var(--color-primary-hover);
+}
+
+/* Estilización del Carousel de Bootstrap */
+.img-carousel {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption-custom {
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-border);
+}
+
+/* Cards de Bootstrap personalizadas */
+.card-custom {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    color: var(--color-text-main);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(99, 102, 241, 0.2);
+}
+
+.card-custom img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============================================
+   5. BOTONES Y ESTADOS INTERACTIVOS
+   ============================================ */
+.boton-principal {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: var(--color-primary-hover);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.boton-principal:focus {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 2px;
+}
+
+.boton-principal:active {
+    background-color: var(--color-primary-active);
+    transform: translateY(0);
+}
+
+/* ============================================
+   6. FORMULARIO
+   ============================================ */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campo-form label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-main);
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background-color: var(--color-bg-main);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text-main);
+    font-family: var(--font-family);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* ============================================
+   7. FOOTER
+   ============================================ */
+.footer-principal {
+    background-color: var(--color-bg-header);
+    border-top: 1px solid var(--color-border);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.lista-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-enlace {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-enlace:hover,
+.footer-enlace:focus {
+    color: var(--color-primary);
+}
+
+/* ============================================
+   8. MEDIA QUERY: DESKTOP (min-width: 1024px)
+   ============================================ */
+@media (min-width: 1024px) {
+    .main-layout {
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .tarjeta-destacada {
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* CSS Grid con Grid Template Areas (Pre-entrega 4) */
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas: "texto imagen";
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-texto {
+        grid-area: texto;
+    }
+
+    .hero-imagen {
+        grid-area: imagen;
+    }
+
+    /* Grilla de tarjetas usando la unidad fr */
+    .contenedor-grilla {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
