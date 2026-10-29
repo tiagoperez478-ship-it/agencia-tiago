@@ -1,0 +1,47 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.tarjeta-destacada {
+  @extend %tarjeta-base;
+
+  // Animación nativa (Pre-entrega 8)
+  animation: fadeIn 0.8s ease-in-out;
+
+  &:hover {
+    border-color: rgba($color-primario, 0.4);
+  }
+}
+
+.contenedor-grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta-servicio {
+  @extend %tarjeta-base;
+  padding: 1.5rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: $color-texto;
+  }
+
+  p {
+    color: $color-secundario;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

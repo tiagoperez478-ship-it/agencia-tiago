@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+
+.footer-principal {
+  background-color: $color-card;
+  color: $color-secundario;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  .footer-enlace {
+    color: $color-secundario;
+    text-decoration: none;
+    transition: $transicion-suave;
+    
+    &:hover {
+      color: $color-primario;
+    }
+  }
+}

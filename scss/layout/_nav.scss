@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+
+.header-bootstrap {
+  .logo-marca {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: $color-texto !important;
+    &:hover {
+      color: $color-primario !important;
+    }
+  }
+
+  .nav-enlace {
+    color: $color-secundario !important;
+    font-weight: 500;
+    transition: $transicion-suave;
+
+    &:hover, &.active {
+      color: $color-texto !important;
+    }
+  }
+}

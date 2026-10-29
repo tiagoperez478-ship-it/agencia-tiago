@@ -1,19 +1,26 @@
-# TP Studio - Agencia de Desarrollo Web
+# TP Studio - Agencia de Desarrollo Web y Marketing Digital
 
-Este repositorio contiene el proyecto para el curso de Desarrollo Web de Coderhouse.
+Sitio web institucional desarrollado para **TP Studio**, agencia enfocada en el diseño de experiencias web, maquetación responsiva y optimización digital.
 
-## 🚀 Sitio Desplegado
-- **GitHub Pages:** [https://github.com/tiagoperez478-ship-it/agencia-tiago](https://github.com/tiagoperez478-ship-it/agencia-tiago)
+## 🚀 Enlaces del Proyecto
+- **Repositorio GitHub:** [https://github.com/tiagoperez478-ship-it/agencia-tiago](https://github.com/tiagoperez478-ship-it/agencia-tiago)
 
 ## 🛠️ Tecnologías y Metodologías Aplicadas
-- **HTML5 Semántico:** Estructura unificada en 5 páginas (`index.html` y subpáginas en `pages/`).
-- **CSS3 & Mobile-First:** Maquetación responsiva partiendo del diseño móvil.
-- **CSS Grid & Flexbox:** Implementación de `grid-template-areas`, unidades relativas (`fr`) y `gap`.
-- **Bootstrap 5.3 (CDN):** Navbar responsiva con menú hamburguesa y componente Carousel.
-- **Estados Interactivos:** Pseudoclases `:hover`, `:focus` y `:active` con animaciones suaves (`transition`).
+- **HTML5 Semántico y SEO On-Page:** Estructura organizada en 5 páginas con etiquetas meta optimizadas, jerarquía de encabezados y atributos de accesibilidad (`alt`).
+- **CSS3 & SASS (SCSS Modular):** Arquitectura de estilos estructurada mediante partials (`utilities/`, `base/`, `layout/`, `components/`) compilados de forma unificada en `main.scss`.
+- **CSS Grid & Flexbox:** Maquetación avanzada utilizando áreas de grilla, unidades relativas y control de alineación adaptable.
+- **Bootstrap 5.3 (CDN):** Navbar responsiva y componentes interactivos como el Carousel.
+- **Animaciones Avanzadas:** Integración de la librería **AOS (Animate On Scroll)** para efectos dinámicos al desplazar la página.
 
-## 📝 Historial de Commits
-1. `feat: add bootstrap navbar and responsive layout across all pages`
-2. `feat: add grid-template-areas hero and bootstrap carousel component`
-3. `style: add interactive pseudoclasses hover focus active and smooth transitions`
-4. `docs: add README with deployment links and project details`
+## 📁 Estructura del Repositorio
+```text
+agencia-tiago/
+├── index.html
+├── pages/
+│   ├── contacto.html
+│   ├── proyectos.html
+│   ├── servicios.html
+│   └── sobre-mi.html
+├── scss/
+├── styles/
+└── README.md
